@@ -1,1 +1,1 @@
-# Design-patterns
+学习设计模式，用C++实现，记录之。
