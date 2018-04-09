@@ -1,7 +1,5 @@
 
 #include "implementation.h"
-#include <thread>
-
 
 int main()
 {
@@ -15,8 +13,6 @@ int main()
 	sub->SetStatus("new");
 	sub->notify();
 
-
-	std::this_thread::sleep_for(std::chrono::seconds(10));
-
+	system("pause");
 	return 0;
 }

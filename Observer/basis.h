@@ -14,6 +14,8 @@
 #include <list>
 #include <string>
 
+class Subject;
+
 //观察者
 class Observer
 {
@@ -26,6 +28,9 @@ public:
 	
 	virtual ~Observer() {};
 	virtual void update() = 0;
+
+protected:
+	Subject* m_obj;
 };
 
 //被观察对象

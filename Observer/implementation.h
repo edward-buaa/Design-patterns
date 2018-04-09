@@ -31,7 +31,7 @@ public:
 class ImplObserver : public Observer
 {
 public:
-	ImplObserver(Subject* obj) : m_obj(obj) { };
+	ImplObserver(Subject* obj) { m_obj = obj; };
 	ImplObserver(const ImplObserver&) = delete;
 	ImplObserver(const ImplObserver&&) = delete;
 	ImplObserver& operator=(const ImplObserver&) = delete;
@@ -46,7 +46,8 @@ public:
 	}
 
 private:
-	Subject* m_obj;
+	//放到基类中去了，就不可以用在构造函数的初始化列表了
+	//Subject* m_obj;
 };
 
 
